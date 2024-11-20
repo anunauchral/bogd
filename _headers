@@ -1,0 +1,19 @@
+# Add gzip encoding for .gz files
+/*.gz
+Content-Encoding: gzip
+Cache-Control: public, max-age=315360000
+
+# Add Brotli encoding for .br files
+/*.br
+Content-Encoding: br
+Cache-Control: public, max-age=315360000
+
+# Set correct MIME type for WebAssembly file (ImagineAR.wasm)
+ /Build/ImagineAR.wasm.gz
+Content-Type: application/wasm
+Content-Encoding: gzip
+
+# Set correct MIME type for WebAssembly file (ImagineAR.wasm)
+ /Build/ImagineAR.wasm.br
+Content-Type: application/wasm
+Content-Encoding: br
